@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkqo_evave_github_website_code=self.webpackChunkqo_evave_github_website_code||[]).push([[700],{5688:e=>{e.exports=JSON.parse('{"label":"hola","permalink":"/blog/tags/hola","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);
