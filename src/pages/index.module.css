@@ -1,0 +1,93 @@
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+ :root {
+  --banner-color: #70a18b;
+ }
+
+ .heroBanner {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0rem 0;
+  position: absolute;
+  overflow: hidden;
+  background-color: var(--banner-color);
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2), 0 20px 20px 0 rgba(0, 0, 0, 0.19);
+  max-width: 100%;
+  height: 330px;
+  word-wrap: break-word;
+  left: 0;
+  right: 0;
+}
+
+.heroFiller{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: inherit;
+  padding: 0rem 0;
+  height: 330px;
+  position: sticy;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0);
+  max-width: 100%;
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 0rem;
+  }
+}
+
+.buttons {
+  display: flex;
+  padding-top: 20px;
+  justify-content: center;
+
+}
+
+.heroTagline{
+  font-size: 40px;
+  /* word-wrap: break-word; */
+  max-width: 100%;
+  letter-spacing: -1.5px;
+  line-height: 1.2;
+  color: #333;
+}
+
+.heroTitle{
+  font-size: 70px;
+  word-wrap: break-word;
+  max-width: 100%;
+  letter-spacing: -1.5px;
+  line-height: 1.2;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Styling one class specially in dark mode */
+[data-theme='dark'] .heroBanner {
+  background-color: #303846;
+}
+
+/* Styling one class specially in dark mode */
+[data-theme='dark'] .heroTitle {
+  color: #f1f1f1;
+}
+
+/* Styling one class specially in dark mode */
+[data-theme='dark'] .heroTagline {
+  color: #f8f8f8;
+}
