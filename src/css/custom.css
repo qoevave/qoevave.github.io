@@ -91,3 +91,7 @@ article {
 [data-theme='dark'] .navbar {
   background-color: #1B1B1D;
 }
+
+.navbar__title{
+  color: white;
+}
