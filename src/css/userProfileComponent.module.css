@@ -1,0 +1,37 @@
+.profileContainer {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 16px;
+  object-fit: cover;
+}
+
+.userTitleText {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: -5px;
+}
+
+.positionText {
+  font-size: 16px;
+  font-style: italic;
+  color: #333;
+  margin-bottom: -5px;
+}
+
+/* Styling one class specially in dark mode */
+[data-theme='dark'] .userTitleText {
+  color: #f1f1f1;
+}
+
+/* Styling one class specially in dark mode */
+[data-theme='dark'] .positionText {
+  color: #f8f8f8;
+}

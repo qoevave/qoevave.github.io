@@ -8,8 +8,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'QoEVAVE Project',
-  tagline: 'VR Realization • Quality of Experience • Auditory Cognition',
+  title: 'QoEVAVE',
+  tagline: 'DFG SPP 2236 Audictive, Proj. No. 444832250',
   favicon: 'img/Q-logo_favicon.ico',
 
   // Set the production url of your site here
@@ -39,24 +39,19 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-        docs: {
-          sidebarPath: './sidebars.js',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
+        docs: false,
+        blog: false,
         theme: {
           customCss: './src/css/custom.css',
         },
       }),
+    ],
+  ],
+
+  plugins: [
+    [
+      './plugins/qoevave-publications',
+      {bibFile: 'static/data/QoEVAVE.bib'},
     ],
   ],
 
@@ -66,11 +61,23 @@ const config = {
       // Replace with your project's social card
       image: 'img/Q-logo.png',
       navbar: {
-        title: 'QoEVAVE Project',
+        title: 'QoEVAVE',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'QoEVAVE project logo',
           src: 'img/Q-logo.png',
         },
+        items: [
+          {
+            to: '/about',
+            label: 'About',
+            position: 'right',
+          },
+          {
+            to: '/publications',
+            label: 'Publications',
+            position: 'right',
+          },
+        ],
       },
       footer: {
         style: 'dark',

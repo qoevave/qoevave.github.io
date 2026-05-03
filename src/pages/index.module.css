@@ -3,51 +3,29 @@
  * and scoped locally.
  */
 
- :root {
+:root {
   --banner-color: #70a18b;
- }
+}
 
- .heroBanner {
+.heroBanner {
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover 100%;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 0rem 0;
-  position: absolute;
+  padding: 4rem 1rem;
   overflow: hidden;
   background-color: var(--banner-color);
   box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2), 0 20px 20px 0 rgba(0, 0, 0, 0.19);
-  max-width: 100%;
-  height: 330px;
   word-wrap: break-word;
-  left: 0;
-  right: 0;
-}
-
-.heroFiller{
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: inherit;
-  padding: 0rem 0;
-  height: 330px;
-  position: sticy;
-  overflow: hidden;
-  background-color: rgba(255, 255, 255, 0);
-  max-width: 100%;
 }
 
 @media screen and (max-width: 996px) {
   .heroBanner {
-    padding: 0rem;
+    padding: 2rem 1rem;
   }
 }
 
@@ -58,15 +36,6 @@
 
 }
 
-.heroTagline{
-  font-size: 40px;
-  /* word-wrap: break-word; */
-  max-width: 100%;
-  letter-spacing: -1.5px;
-  line-height: 1.2;
-  color: #333;
-}
-
 .heroTitle{
   font-size: 70px;
   word-wrap: break-word;
@@ -75,6 +44,35 @@
   line-height: 1.2;
   font-family: Arial, sans-serif;
   color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.heroSubtitle{
+  font-size: 28px;
+  font-weight: 500;
+  max-width: 900px;
+  margin: 0 auto 1rem;
+  letter-spacing: -0.5px;
+  line-height: 1.3;
+  color: #333;
+}
+
+.heroTagline{
+  font-size: 18px;
+  font-weight: 400;
+  max-width: 100%;
+  letter-spacing: 0.2px;
+  line-height: 1.4;
+  color: #333;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  opacity: 0.85;
+}
+
+@media screen and (max-width: 996px) {
+  .heroTitle { font-size: 48px; }
+  .heroSubtitle { font-size: 22px; }
+  .heroTagline { font-size: 16px; }
 }
 
 /* Styling one class specially in dark mode */
@@ -84,6 +82,10 @@
 
 /* Styling one class specially in dark mode */
 [data-theme='dark'] .heroTitle {
+  color: #f1f1f1;
+}
+
+[data-theme='dark'] .heroSubtitle {
   color: #f1f1f1;
 }
 

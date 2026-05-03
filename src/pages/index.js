@@ -1,6 +1,7 @@
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import IntroSection from '../components/IntroSection';
 import ProjectCardsComponent from '../components/ProjectCards';
 import Layout from '@theme/Layout';
 
@@ -13,9 +14,12 @@ function HomepageHeader() {
 
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">  
-      <h1 className={styles.heroTitle}>{siteConfig.title}</h1>    
-      <p className={styles.heroTagline}>{siteConfig.tagline}<br /></p>
+      <div className="container">
+        <h1 className={styles.heroTitle}>{siteConfig.title}</h1>
+        <h3 className={styles.heroSubtitle}>
+          A research program on quality of experience in interactive audiovisual virtual environments
+        </h3>
+        <p className={styles.heroTagline}>{siteConfig.tagline}</p>
       </div>
     </header>
   );
@@ -26,10 +30,10 @@ export default function Home() {
   return (
     <Layout
       title={`The ${siteConfig.title} Database`}
-      description="Quality of Experience Evaluation of Interactive Virtual Environments with Audiovisual Scenes">
-      <div className={clsx('heroFiller', styles.heroFiller)}></div>
+      description="A research program on quality of experience in interactive audiovisual virtual environments">
       <HomepageHeader />
       <main>
+        <IntroSection />
         <ProjectCardsComponent />
       </main>
     </Layout>

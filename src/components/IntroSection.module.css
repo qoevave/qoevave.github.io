@@ -1,0 +1,48 @@
+.intro {
+  width: 100%;
+  padding: 40px 10% 10px;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 996px) {
+  .intro {
+    padding: 25px 5% 5px;
+  }
+}
+
+.inner {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: left;
+  padding-bottom: 24px;
+}
+
+.lead {
+  font-size: 16px;
+  line-height: 1.65;
+  color: #333;
+  margin: 0 0 12px 0;
+}
+
+.readMore {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ifm-color-primary);
+  text-decoration: none;
+}
+
+.projectDuration {
+  font-size: 13px;
+  font-style: italic;
+  color: var(--ifm-color-emphasis-700);
+  margin: 0 0 14px 0;
+}
+
+.readMore:hover {
+  text-decoration: underline;
+}
+
+[data-theme='dark'] .lead {
+  color: #e6e6e6;
+}

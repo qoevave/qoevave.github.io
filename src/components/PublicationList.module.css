@@ -1,0 +1,134 @@
+.list {
+  max-width: 900px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+.empty {
+  font-style: italic;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.thesisGroup {
+  margin-bottom: 40px;
+  padding: 20px 24px;
+  border: 1px solid rgba(91, 131, 113, 0.25);
+  border-radius: 8px;
+  background-color: rgba(91, 131, 113, 0.04);
+}
+
+[data-theme='dark'] .thesisGroup {
+  border-color: rgba(165, 204, 185, 0.2);
+  background-color: rgba(165, 204, 185, 0.04);
+}
+
+.thesisHeading {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--ifm-color-primary);
+  margin: 0 0 4px 0;
+}
+
+.thesisIntro {
+  font-size: 13px;
+  font-style: italic;
+  color: var(--ifm-color-emphasis-700);
+  margin: 0 0 14px 0;
+}
+
+.sectionHeading {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--ifm-color-primary);
+  margin: 0 0 20px 0;
+}
+
+.yearGroup {
+  margin-bottom: 32px;
+}
+
+.yearHeading {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--ifm-color-emphasis-800);
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+  padding-bottom: 6px;
+  margin-bottom: 16px;
+}
+
+.entries {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.entry {
+  margin-bottom: 18px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--ifm-color-emphasis-100);
+}
+
+.entry:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.citation {
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--ifm-font-color-base);
+}
+
+.citation a {
+  color: var(--ifm-color-primary);
+  word-break: break-word;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+  flex-wrap: wrap;
+}
+
+.actionLink,
+.actionButton {
+  display: inline-flex;
+  align-items: center;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background-color: rgba(91, 131, 113, 0.12);
+  color: #2c4a3a;
+  border: 1px solid rgba(91, 131, 113, 0.3);
+  text-decoration: none;
+  cursor: pointer;
+  font-family: inherit;
+  line-height: 1.4;
+  transition: background-color 0.15s ease;
+}
+
+.actionLink:hover,
+.actionButton:hover {
+  background-color: rgba(91, 131, 113, 0.22);
+  text-decoration: none;
+}
+
+.actionButton:focus-visible,
+.actionLink:focus-visible {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+}
+
+[data-theme='dark'] .actionLink,
+[data-theme='dark'] .actionButton {
+  background-color: rgba(165, 204, 185, 0.1);
+  color: #c8d6cf;
+  border-color: rgba(165, 204, 185, 0.3);
+}
+
+[data-theme='dark'] .actionLink:hover,
+[data-theme='dark'] .actionButton:hover {
+  background-color: rgba(165, 204, 185, 0.2);
+}

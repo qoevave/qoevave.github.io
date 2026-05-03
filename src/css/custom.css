@@ -43,10 +43,12 @@ article {
 }
 
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 :root {
-  --ifm-font-family-base: 'Poppins';
+  --ifm-font-family-base: 'Open Sans';
   --doc-sidebar-width: 250px;
   --ifm-font-size-base: 14px;
 }
@@ -74,10 +76,10 @@ article {
   --doc-sidebar-width: 250px;
 }
 
-.main-wrapper{
-  padding-left: 10%;
-  padding-right: 10%;
-}
+/* Note: side padding is intentionally not applied to .main-wrapper so the
+   homepage hero can span the full viewport width. Page-level horizontal
+   indent is applied per-section (see .sectionWrapper in
+   ProjectCards.module.css and .intro in IntroSection.module.css). */
 
 .navbar__inner{
   margin-right:15%;
@@ -94,4 +96,24 @@ article {
 
 .navbar__title{
   color: white;
+}
+
+/* The navbar background is dark in both light and dark mode (set above), so
+   force the nav-link colour to white so items like "About" / "Publications"
+   remain legible — Infima's default link colour is dark grey in light mode. */
+.navbar__link,
+.navbar__link:visited {
+  color: #ffffff;
+}
+
+.navbar__link:hover,
+.navbar__link--active {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+/* The colour-mode toggle icon also lives on the dark navbar — keep it white. */
+.navbar .clean-btn,
+.navbar .clean-btn svg {
+  color: #ffffff;
+  fill: currentColor;
 }
